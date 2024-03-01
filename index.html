@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>volleyball</title>
+    <style>
+        body{
+            background: radial-gradient(circle at 0.2% 0.5%, rgb(252, 165, 241) 0%, rgb(181, 255, 255) 100.2%);
+           
+        }
+        h1{font-size: 40px;}
+        h1, h2{text-align: center; opacity: 0,6;
+        font-family:"Linux Libertine","Palatino Linotype","Georgia","Times",serif;
+    color: rgb(50, 50, 97);}
+
+
+        .container 
+        {
+            max-width:800px;
+        background: rgb(242, 237, 237);
+    padding:20px;
+border-radius: 10px;
+
+margin:20px auto ;
+}
+
+        .volleyball-intro-picture{display: block;
+            margin: 20px auto;
+            width: 80%;
+            padding: auto;
+            border-radius:10px;
+            transition: all 150ms ease-in-out;
+        }
+
+.volleyball-intro-picture:hover{filter: contrast(80%);transform: scale(1.3);}
+
+        button{display: block;
+        margin: 0 auto;
+        border: 1px solid rgb(177, 173, 173);
+        background: white;
+        font-size: 12px;
+    border-radius: 6px;
+padding:10px 15px;
+transition: all 150ms ease-in-out;}
+button:hover{
+    background: rgb(189, 183, 183);
+cursor:pointer;}
+
+
+footer{text-align: center;
+margin:10px, 0;
+font-size: 18px; ;}
+
+.theme-button{ font-size: 12px; font-family: "Linux Libertine","Palatino Linotype","Georgia","Times",serif; background: rgb(50, 50, 97);color:white; padding : 5 8px;}
+    .theme-button:hover{color:black;background: white;}
+
+    p{font-size: 16px;
+    opacity: 0.8;
+    text-align: center;
+    display: block;
+}
+.grid{margin: 20px 0;
+    display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap:20px;}
+
+.grid img{width:100%;
+    
+    border-radius:10px;
+transition: all 150ms ease-in-out;
+object-fit:  cover;
+
+}
+.grid img:hover{transform: scale(2);}
+
+.dark {
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+color: white;      }
+
+.dark .container{ background: rgb(36, 35, 35);}
+.dark a{color:rgb(235, 215, 235);
+} 
+.dark h1{color:rgb(235, 215, 235);
+}
+.dark h2{color:rgb(235, 215, 235);
+}
+    </style>
+</head>
+<body>
+    <button class="theme-button">Change theme</button>
+
+    <div class="container">
+    
+    <h1>Volleyball</h1>
+    <h2> game played by enthusiasts and professionals</h2>
+  
+    <a href="https://www.youtube.com/shorts/x2VYZXdJUuw" target="_blank"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/169/original/pexels-kampus-production-6180458.jpg?1705654606" alt="" class="volleyball-intro-picture">
+    </a><div class="grid">
+
+   <a href="https://www.youtube.com/shorts/eK7FI26zvFE" target="_blank"> <img src="
+    https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/181/original/pexels-rdne-stock-project-12169162.jpg?1705656249" alt=""></a>
+<a href="https://www.youtube.com/shorts/ywBTVjqiUfU" target="_blank"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/183/original/pexels-alexandre-saraiva-carniato-2365320.jpg?1705656461" alt="">
+</a>
+   <a href="https://www.youtube.com/shorts/-4CdL2aNEGg"target="_blank"> <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/178/original/pexels-nishant-meena-14561245.jpg?1705655600" alt=""class="volleyball-last-picture">
+   </a>
+</div>
+
+<p>
+    Volleyball is an Olympic team sport in the group of backstroke games. Two teams of six players each face each other on a playing field divided by a net. The aim of the game is to hit a ball over the net in such a way that the ball touches the ground of the opponent's half of the court or the opposing team commits a mistake. A team is allowed to touch the ball three times in a row to return it. Any block does not count. The ball is played volley (hence the name of the sport) and may be touched with any part of the body, however, in practice the hands or arms are used almost exclusively.
+
+<br /><br />
+📖
+<a href="https://de.wikipedia.org/wiki/Volleyball" target="_blank">
+<strong> Read on Wikipedia </strong></a>
+</p>
+<a href="https://www.youtube.com/watch?v=oO44w6NFpl4"target="_blank">
+<button>Learn Volleyball</button></a>
+</div>
+</div>
+<footer>Coded with 💜 by <a href="https://www.linkedin.com/in/cristina-mihalachi-710461292/"target="_blank">Cristina Mihalachi </a> </footer>
+
+<script> 
+
+function changeTheme (){ 
+let body=document.querySelector("body");
+   
+if (body.classList.contains("dark")){body.classList.remove("dark");}else{ body.classList.add("dark");}
+
+}
+
+let themeButton =document.querySelector(".theme-button");
+themeButton.addEventListener("click", changeTheme)
+
+</script>
+
+</body>
+</html>
